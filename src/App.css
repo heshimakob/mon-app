@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: rebeccapurple;
+  color: #fff;
+}
+.nav-links{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  color:#fff;
+}
+li{
+  color: #fff;
+}
