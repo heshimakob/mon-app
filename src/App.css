@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  background-color: #E7DBDB;
+}
+.nav__menu{
+  margin: 0;
+  width:20%;
+  height:100%;
+  background: #CF2828;
   color: white;
+  list-style-type: none;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  padding: 10px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  border: none;
+  border-bottom: 1px solid white;
+}
+.logo img{
+  width: 60px;
+  max-width: 60px;
+  margin: 0 10px 0 0;
+}
+.nav__menu li{
+  margin: 20px 0px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.nav__menu a{
+  color: white;
+  text-decoration: none;
+  transition: .4s ease-in-out;
+  
+}
+.nav__menu a:hover{
+  font-weight: bold;
+}
+.nav__menu a:focus{
+  font-weight: bold;
+}
+.main-route-place{
+  width: 70%;
 }
 
-.App-link {
-  color: #61dafb;
+
+.section{
+  width: 90%;
+  margin: 20px 0px;
+}
+.top{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  height: 45px;
+}
+.top h2{
+  width: 70%;
+}
+.top p{
+  width: 20%;
+}
+.date{
+  width: 100%;
+  height: 30px;
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.caption{
+  background: #e6a4a4;
+  color: white;
+  height: 45px;
+  padding: 0 0 0 20px;
+  display: flex;
+  align-items: center;
+}
+.table{
+  width: 100%;
+  background: white;
+  padding: 0 0 20px 0;
+  
+}
+.table__content{
+  width: 90%;
+  margin: auto;
+  border: thin solid #4d4d4d;
+  padding: 0px
+
+}
+table{
+  width: 99%;
+  text-align: center;
+  background: white;
+  border: thin solid #a3a2a2;
+  margin: auto;
+  border-collapse: collapse;
+  height: 10px;
+  overflow: hidden;
+}
+.end{
+  border: none;
+}
+
+thead{
+  border: none;
+  box-shadow: 2px 5px 5px #a3a2a2;
+  height: 50px;
+  padding: 5px;
+}
+th{
+  height: 45px;
+  margin: 5px;
+  width: 100%/6;
+  border-right: 1px solid #8a8888 ;
+}
+td{
+  height: 50px;
+  width: 100%/6;
+  border-bottom: thin solid #4d4d4d;
+}
+.navigation{
+  display: flex;
+  width: 100%;
+  justify-content:space-evenly ;
+  align-items: center;
+  margin: 5px 0;
+}
+.navigation button{
+  width: 200px;
+  height: 30px;
+  border: none;
+  background: #CF2828;
+  color: white;
+  font-family: 'roboto', sans-serif;
+  transition: .4s ease-in-out;
+
+}
+.navigation button:hover{
+  font-weight: bold;
+  background: #cf2828c0;
+}
+.line{
+  margin: 0px 10px;
+  border: 1px solid #4d4d4d;
+  padding: 0px 10px;
+}
+.mapouter{
+  position:relative;
+  text-align:right;
+  height:500px;
+  width:600px;
+}
+
+.gmap_canvas{
+  overflow:hidden;
+  background:none!important;
+  height:500px;
+  width:600px;
 }
